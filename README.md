@@ -143,10 +143,10 @@
 
 **게시글 수정**
 - 주소창에서 게시글 수정하는 주소를 작성한 경우 다른 사람이 작성한 글도 수정이 가능했음.
-- [수정 전 코드 보기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java#L189-L204)
+- [수정 전 코드 보기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java#L169-L195)
 - **해결**
   - 게시글 수정 페이지로 이동할 때 로그인 멤버의 멤버 번호와 게시글 작성한 사람의 멤버 번호가 같을 경우라는 조건문을 추가.
-  - [수정 코드 보기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java#L206-L231)
+  - [수정 코드 보기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java#L227-L252)
 
 
 **게시판 조회 정렬**
