@@ -131,6 +131,16 @@
 </br>
 
 ## 5. 트러블 슈팅
+**Restful API로 리팩토링**
+- 매핑 주소를 Restful API로 리팩토링.
+- 댓글 삭제 시 delete flag를 사용해 DB를 업데이트 해주는 코드를 작성해 매핑 주소를 delete가 아닌 patch로 작성.
+[코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/CommentController.java#L66)
+
+**ajax를 axios로 리팩토링**
+- ajax로 작성한 코드들을 axios를 사용하여 리팩토링.
+[코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js#L302-L364)
+
+
 **게시글 수정**
 - 주소창에서 게시글 수정하는 주소를 작성한 경우 다른 사람이 작성한 글도 수정이 가능했음.
 - [수정 전 코드 보기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java#L189-L204)
