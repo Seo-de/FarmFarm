@@ -11,13 +11,29 @@
 > **농산물 직거래 플랫폼 및 농사 용품 판매 쇼핑몰**
 > **[FarmFarm 바로가기](http://129.154.53.250:8080) <br>**
 
-### 프로젝트 개요
+<br>
+
+
+### ✍️개발 동기✍️
+최근 귀농, 숲세권 등 바쁜 현대 사회에서 벗어나 자연과 가까워지고싶은 욕구의 증가로 인하여 작게는 집 베란다 화분에서부터 더 나아가 주말 농장, 텃밭 등을 찾는 수요가 늘고있다.<br>
+또한 팬데믹으로 인해 건강에 관한 관심이 증가함에 따라 점점 바른 먹거리, 깨끗한 농산물을 찾는 수요가 늘어나면서 수요자와 생산자 모두를 위한 사이트의 필요성을 자각하였다.
+
+<br>
+    
+### ✍️기획 의도✍️
+팜팜은 이러한 수요를 접목하면서 시작되었다.
+건강한 먹거리를 사고파는 플랫폼이면서 먹거리를 직접 기르는 데 도움을 받을 수 있는 플랫폼.
+팜팜은 소비자가 판매자가 되어 자신이 기른 농작물을 직접 판매할 수 있고, 농사에 필요한 물품을 사이트에서 직접 구매할 수 있으며 커뮤니티를 통해 정보를 주고 받을 수 있는 All in One 거래 중개 복합 플랫폼이다.
+
+</br>
+
+### ✍️프로젝트 개요✍️
 
 - Java와 Spring 프레임워크를 이용하여 온라인 쇼핑몰 구축
 - 상품 정보, 주문 정보, 회원 정보 등을 관리하는 기능 제공
 - 개인간 거래, 커뮤니티 게시판, 채팅 및 알림 기능 제공
 
-</br>
+<br>
 
 ## 1. 제작 기간 & 참여 인원 & 구현 기능
 - 2022년 12월 12일 ~ 2023년 1월 11일
@@ -65,72 +81,7 @@
 
 <br><br>
 
-## 3. ERD 설계
-[FarmFarm ERD](https://www.erdcloud.com/d/xpKBdcyyrs6Ef2k9F) 
-
-<br>
-
-![FarmFarm ERD](https://user-images.githubusercontent.com/110797113/220540302-1945744a-7fa8-41ab-aac2-13c9b57dc5b2.png)
-<br><br>
-
-## 4. 핵심 기능
-게시판 CRUD 기능 구현
-<details> 
-<summary> 핵심 기능 설명 펼치기 </summary>
-
-### 4-1. 게시판 목록
-<img width="610" alt="1" src="https://user-images.githubusercontent.com/110797113/220551339-9f5f47ed-682f-4f47-a534-21ed7b59ba61.png">
-<br>
-
-- 카테고리 별 게시판 목록이 나옴.
-- 원하는 검색어를 원하는 조건별(제목, 내용, 제목+내용)로 검색 가능.
-- 원하는 정렬 방식(최신순, 조회수, 좋아요)을 선택해 게시글 조회.
-- 페이지네이션을 이용해 게시판 페이지를 이동.
-- 코드 보러 가기
-  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardListController.java)
-  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardListServiceImpl.java)
-  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardList.js)
-  <br>
-  
-### 4-2. 게시글 작성
-- 로그인 한 일반회원과 관리자에게 글쓰기 버튼이 나와 글쓰기 가능.
-- 코드 보러 가기
-  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardWriteController.java)
-  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardWriteServiceImpl.java)
-  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardWrite.js)
-  <br>
-  
- ### 4-3. 게시글 조회, 수정, 삭제
- <img width="693" alt="화면 캡처 2023-01-08 181633" src="https://user-images.githubusercontent.com/110797113/220554471-a8ba3ffa-1792-4ba8-bd7c-524d7557fb4c.png">
-<br>
-
-- 게시글 작성자, 작성일 및 게시글 조회 가능.
-  - 게시글 작성자 O : 게시글 수정하기, 게시글 삭제하기가 가능.
-  - 게시글 작성자 X : 게시글 좋아요, 신고하기 가능.
-- 코드 보러 가기
-  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java)
-  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardDetailServiceImpl.java)
-  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardDetail.js)
-  - [게시글 수정 JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardUpdate.js)
-  <br>
-  
-  
-### 4-4. 댓글 기능
-- 게시글에 댓글 및 비밀 댓글, 답글 달기 가능.
-  - 댓글 관련 기능들은 ajax로 불러와 댓글 등록, 수정, 삭제 가능.
-  - 댓글 작성 시 작성한 댓글로 스크롤 이동.
-- 코드 보러 가기
-  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/CommentController.java)
-  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/CommentServiceImpl.java)
-  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js)
-<br>
-
-</details>
-
-
-</br>
-
-## 5. 트러블 슈팅
+## 3. 트러블 슈팅
 **Restful API로 리팩토링**
 - 매핑 주소를 Restful API로 리팩토링.
 - 댓글 삭제 시 delete flag를 사용해 DB를 업데이트 해주는 코드를 작성해 매핑 주소를 delete가 아닌 patch로 작성.
@@ -169,6 +120,73 @@
     - 게시글 작성자 X + 비밀댓글 작성자 O : 비밀댓글 내용 보이게 하기 / 답글달기, 수정하기, 삭제하기
     - 그 외 : 댓글 내용에 '비밀댓글입니다.' 나오게 설정
     - [코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js#L125-L162)
+
+
+## 4. ERD 설계
+[FarmFarm ERD](https://www.erdcloud.com/d/xpKBdcyyrs6Ef2k9F) 
+
+<br>
+
+![FarmFarm ERD](https://user-images.githubusercontent.com/110797113/220540302-1945744a-7fa8-41ab-aac2-13c9b57dc5b2.png)
+<br><br>
+
+## 5. 핵심 기능
+게시판 CRUD 기능 구현
+<details> 
+<summary> 핵심 기능 설명 펼치기 </summary>
+
+### 5-1. 게시판 목록
+<img width="610" alt="1" src="https://user-images.githubusercontent.com/110797113/220551339-9f5f47ed-682f-4f47-a534-21ed7b59ba61.png">
+<br>
+
+- 카테고리 별 게시판 목록이 나옴.
+- 원하는 검색어를 원하는 조건별(제목, 내용, 제목+내용)로 검색 가능.
+- 원하는 정렬 방식(최신순, 조회수, 좋아요)을 선택해 게시글 조회.
+- 페이지네이션을 이용해 게시판 페이지를 이동.
+- 코드 보러 가기
+  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardListController.java)
+  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardListServiceImpl.java)
+  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardList.js)
+  <br>
+  
+### 5-2. 게시글 작성
+- 로그인 한 일반회원과 관리자에게 글쓰기 버튼이 나와 글쓰기 가능.
+- 코드 보러 가기
+  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardWriteController.java)
+  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardWriteServiceImpl.java)
+  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardWrite.js)
+  <br>
+  
+ ### 5-3. 게시글 조회, 수정, 삭제
+ <img width="693" alt="화면 캡처 2023-01-08 181633" src="https://user-images.githubusercontent.com/110797113/220554471-a8ba3ffa-1792-4ba8-bd7c-524d7557fb4c.png">
+<br>
+
+- 게시글 작성자, 작성일 및 게시글 조회 가능.
+  - 게시글 작성자 O : 게시글 수정하기, 게시글 삭제하기가 가능.
+  - 게시글 작성자 X : 게시글 좋아요, 신고하기 가능.
+- 코드 보러 가기
+  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/BoardDetailController.java)
+  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/BoardDetailServiceImpl.java)
+  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardDetail.js)
+  - [게시글 수정 JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/boardUpdate.js)
+  <br>
+  
+  
+### 5-4. 댓글 기능
+- 게시글에 댓글 및 비밀 댓글, 답글 달기 가능.
+  - 댓글 관련 기능들은 ajax로 불러와 댓글 등록, 수정, 삭제 가능.
+  - 댓글 작성 시 작성한 댓글로 스크롤 이동.
+- 코드 보러 가기
+  - [Controller](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/CommentController.java)
+  - [Service](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/model/service/CommentServiceImpl.java)
+  - [JS](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js)
+<br>
+
+</details>
+
+
+</br>
+
 
 ## 6. 프로젝트 결과 및 회고
 
