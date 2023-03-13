@@ -84,8 +84,7 @@
 ## 3. 트러블 슈팅
 **Restful API로 리팩토링**
 - 매핑 주소를 Restful API로 리팩토링.
-- 댓글 삭제 시 delete flag를 사용해 DB를 업데이트 해주는 코드를 작성해 매핑 주소를 delete가 아닌 patch로 작성.
-- [코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/java/edu/kh/farmfarm/board/controller/CommentController.java#L66)
+- [리팩토링 내용 보러 가기](https://dodiary.tistory.com/89)
 
 **ajax를 axios로 리팩토링**
 - ajax로 작성한 코드들을 axios를 사용하여 리팩토링.
