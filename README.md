@@ -84,7 +84,7 @@
 ## 3. 리팩토링
 **[Restful API로 리팩토링 한 내용 보러 가기](https://dodiary.tistory.com/89)**
 
-**[ajax를 axios로 리팩토링 한 내용 보러 가기]()**
+**[ajax를 axios로 리팩토링 한 내용 보러 가기](https://dodiary.tistory.com/91)**
 
 
 ## 4. 트러블 슈팅
