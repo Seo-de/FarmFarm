@@ -81,15 +81,13 @@
 
 <br><br>
 
-## 3. 트러블 슈팅
-**Restful API로 리팩토링**
-- 매핑 주소를 Restful API로 리팩토링.
-- [리팩토링 내용 보러 가기](https://dodiary.tistory.com/89)
+## 3. 리팩토링
+**[Restful API로 리팩토링 한 내용 보러 가기](https://dodiary.tistory.com/89)**
 
-**ajax를 axios로 리팩토링**
-- ajax로 작성한 코드들을 axios를 사용하여 리팩토링.
-- [코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js#L302-L364)
+**[ajax를 axios로 리팩토링 한 내용 보러 가기]()**
 
+
+## 4. 트러블 슈팅
 
 **게시글 수정**
 - 주소창에서 게시글 수정하는 주소를 작성한 경우 다른 사람이 작성한 글도 수정이 가능했음.
@@ -121,7 +119,7 @@
     - [코드 보러 가기](https://github.com/Seo-de/FarmFarm/blob/main/FarmFarm/src/main/webapp/resources/js/board/comment.js#L125-L162)
 
 
-## 4. ERD 설계
+## 5. ERD 설계
 [FarmFarm ERD](https://www.erdcloud.com/d/xpKBdcyyrs6Ef2k9F) 
 
 <br>
@@ -129,7 +127,7 @@
 ![FarmFarm ERD](https://user-images.githubusercontent.com/110797113/220540302-1945744a-7fa8-41ab-aac2-13c9b57dc5b2.png)
 <br><br>
 
-## 5. 핵심 기능
+## 6. 핵심 기능
 게시판 CRUD 기능 구현
 <details> 
 <summary> 핵심 기능 설명 펼치기 </summary>
@@ -187,7 +185,7 @@
 </br>
 
 
-## 6. 프로젝트 결과 및 회고
+## 7. 프로젝트 결과 및 회고
 
 **프로젝트 결과**
 - 온라인 쇼핑몰 프로토타입 완성
@@ -196,4 +194,4 @@
 
 <br>
 
-[프로젝트 회고](https://dodiary.tistory.com/90)
+[팜팜 프로젝트 회고 ](https://dodiary.tistory.com/90)
