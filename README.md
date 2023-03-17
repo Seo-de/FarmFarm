@@ -189,7 +189,7 @@
 
 <br>
 
-**[팜팜 프로젝트 회고 ](https://dodiary.tistory.com/90)**
+**[팜팜 프로젝트 회고 보러가기](https://dodiary.tistory.com/90)**
 
 <br>
 
